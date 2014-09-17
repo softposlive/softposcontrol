@@ -231,7 +231,7 @@ public class FTPUtility {
                 // FTP server agree connection.;            
             }
 
-        } catch (NoRouteToHostException e) {
+        //} catch (NoRouteToHostException e) {
             if (ftp.isConnected()) {
                 try {
                     ftp.disconnect();
