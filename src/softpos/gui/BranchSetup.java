@@ -927,6 +927,11 @@ public class BranchSetup extends javax.swing.JDialog {
                 bntExitMouseReleased(evt);
             }
         });
+        bntExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntExitActionPerformed(evt);
+            }
+        });
 
         bntSave.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         bntSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PullBill.jpg"))); // NOI18N
@@ -942,6 +947,11 @@ public class BranchSetup extends javax.swing.JDialog {
                 bntSaveMouseReleased(evt);
             }
         });
+        bntSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntSaveActionPerformed(evt);
+            }
+        });
 
         bntCancel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         bntCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Void.jpg"))); // NOI18N
@@ -955,6 +965,11 @@ public class BranchSetup extends javax.swing.JDialog {
         bntCancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 bntCancelMouseReleased(evt);
+            }
+        });
+        bntCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntCancelActionPerformed(evt);
             }
         });
 
@@ -1064,6 +1079,18 @@ private void B_TelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
 private void jMenuItem1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseReleased
     LoadDataFromFile();
 }//GEN-LAST:event_jMenuItem1MouseReleased
+
+    private void bntExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntExitActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntExitActionPerformed
+
+    private void bntSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntSaveActionPerformed
+
+    private void bntCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCancelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bntCancelActionPerformed
 
     public void bntExitClick() {
         this.dispose();
